@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-gray-300 bg-white;
+  right: 0;
+  border-color: rgba(209, 213, 219, 1);
+  background-color: white;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68d391;
+}
+
+.toggle-checkbox-error:checked {
+  @apply: right-0 border-gray-300 bg-white;
+  right: 0;
+  border-color: rgba(209, 213, 219, 1);
+  background-color: red;
+}
+.toggle-checkbox-error:checked + .toggle-label-error {
+  @apply: bg-green-400;
+  background-color: rgba(254, 202, 202, 1);
+}
